@@ -32,8 +32,8 @@
         <tr>
           <td><%= task.id %></td>
           <td><%= task.title %></td>
-          <td><%= task.start_date .strftime("%Y/%m/%d")%></td>
-          <td><%= task.end_date .strftime("%Y/%m/%d")%></td>
+          <td><%= task.start_date.strftime("%Y/%m/%d")%></td>
+          <td><%= task.end_date.strftime("%Y/%m/%d")%></td>
           <td><%= task.all_day ? "○" : "" %></td>
           <td><%= task.updated_at.strftime("%Y/%m/%d %H:%M") %></td>
           <td>
