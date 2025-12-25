@@ -15,17 +15,17 @@
 
   <tr>
     <th class="th-label">開始日</th>
-    <td><%= @task.start_date %></td>
+    <td><%= @task.start_date .strftime("%Y/%m/%d")%></td>
   </tr>
 
   <tr>
     <th class="th-label">終了日</th>
-    <td><%= @task.end_date %></td>
+    <td><%= @task.end_date .strftime("%Y/%m/%d")%></td>
   </tr>
 
   <tr>
     <th class="th-label">終日</th>
-    <td><%= @task.all_day ? "○" : "-" %></td>
+    <td><%= @task.all_day ? "○" : "" %></td>
   </tr>
 </table>
    <div class="form-actions">
